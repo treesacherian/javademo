@@ -11,6 +11,6 @@ public class Person {
 		System.out.println("Occupation: " + occupation);
 		System.out.println("AGE: " + age);
 		System.out.println("Nationality: " + nationality);
-		System.out.println("_____________");
+		System.out.println("_____________________");
 	}
 }
