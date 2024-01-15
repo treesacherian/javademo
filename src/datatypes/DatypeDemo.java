@@ -39,7 +39,7 @@ public class DatypeDemo {
 		System.out.println(fullname);
 		char ch1='y';
 		char ch2='n';
-		System.out.println(ch1-ch2);
+		System.out.println(ch1+ch2);
 		String name1 = null;
 		System.out.println(name1);
 		
