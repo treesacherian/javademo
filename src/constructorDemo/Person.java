@@ -16,6 +16,7 @@ public class Person {
 
 //constructor that takes no parameters. Values are assigned explicitly in the main method
 	public Person() {
+//		default constructor
 	}
 
 	public void displayDetails() {
@@ -28,7 +29,7 @@ public class Person {
 
 	public void setName(String name) {
 		this.name = name;
-//		return (this.name);
+
 	}
 
 	public void setAge(int age) {
