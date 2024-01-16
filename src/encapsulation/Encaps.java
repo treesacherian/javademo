@@ -1,7 +1,8 @@
-package classDemo;
+package encapsulation;
 
-public class App {
+import classDemo.Person;
 
+public class Encaps {
 	public static void main(String[] args) {
 
 		Person family1 = new Person();
@@ -26,6 +27,7 @@ public class App {
 		Person[] familyMembers = { family1, family2, family3 };
 		for (Person member : familyMembers) {
 			member.displayDetails();
+//			System.out.println("I will be " + member.setAge(member.getAge() + 1) + " next year");
 
 		}
 	}
