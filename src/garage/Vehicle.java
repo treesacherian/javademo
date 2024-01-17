@@ -6,10 +6,11 @@ public class Vehicle {
 	private int yearMade;
 
 	public Vehicle() {
-
+		super();
 	}
 
 	public Vehicle(String colour, int numberOfTyres, int yearMade) {
+		super();
 		setColour(colour);
 		setNumberOfTyres(numberOfTyres);
 		setYearMade(yearMade);
@@ -31,7 +32,7 @@ public class Vehicle {
 		System.out.println("Colour: " + colour);
 		System.out.println("Number of Tyres: " + numberOfTyres);
 		System.out.println("Year of Manufacture: " + yearMade);
-		System.out.println();
+//		System.out.println();
 	}
 
 }

@@ -11,9 +11,9 @@ public class VehicleApp {
 		businessVehicles.setNumberOfTyres(6);
 		businessVehicles.setYearMade(2022);
 
-		passengerVehicle.displayDetails();
-		logisticCarriers.displayDetails();
-		businessVehicles.displayDetails();
+//		passengerVehicle.displayDetails();
+//		logisticCarriers.displayDetails();
+//		businessVehicles.displayDetails();
 
 		Cars car1 = new Cars("Blue", 4, 2020, true);
 		Cars car2 = new Cars("Green", 4, 2000, false);
@@ -21,17 +21,11 @@ public class VehicleApp {
 		Cars[] carsList = { car1, car2, car3 };
 		for (Cars car : carsList) {
 			car.displayDetails();
-			car.printCar();
+//			car.printCar();
 		}
-
-//		car1.displayDetails();
-//		car2.displayDetails();
-//		car3.displayDetails();
 
 		Truck truck1 = new Truck("Yellow", 8, 2015, 15);
 		Truck truck2 = new Truck("Brown", 8, 2019, 25);
-//		truck1.displayDetails();
-//		truck2.displayDetails();
 
 		Truck[] truckList = { truck1, truck2 };
 		for (Truck truck : truckList) {
@@ -40,11 +34,17 @@ public class VehicleApp {
 
 		Bike bike1 = new Bike("Black", 2, 2020, true);
 		Bike bike2 = new Bike("Red", 2, 2000, false);
-//		bike1.displayDetails();
-//		bike2.displayDetails();
+
 		Bike[] bikeList = { bike1, bike2 };
 		for (Bike bike : bikeList) {
 			bike.displayDetails();
+		}
+
+		Vehicle v1[] = { new Cars("Black", 4, 2014, true), new Bike("Blue", 2, 2018, false),
+				new Truck("Green", 8, 2022, 150) };
+
+		for (Vehicle v : v1) {
+			v.displayDetails();
 		}
 	}
 }
