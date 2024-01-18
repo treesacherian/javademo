@@ -1,9 +1,7 @@
 
-package garage1;
+package garage;
 
 import java.util.ArrayList;
-
-import garage.Vehicle;
 
 public class Garage {
 	private String name;
@@ -34,7 +32,7 @@ public class Garage {
 		vehicles.remove(vehicle);
 	}
 
-	public void displayDetails() {
+	public void print() {
 		for (Vehicle vehicle : vehicles) {
 			vehicle.displayDetails();
 		}

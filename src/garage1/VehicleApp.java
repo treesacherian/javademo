@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import garage.Bike;
 import garage.Cars;
+import garage.Garage;
 import garage.Truck;
 import garage.Vehicle;
 
@@ -47,12 +48,12 @@ public class VehicleApp {
 		myGarage.parkVehicle(new Bike("Black", 2, 2020, true));
 
 		System.out.println("Vehicles in garage");
-		myGarage.displayDetails();
+		myGarage.print();
 
 		myGarage.collectVehicle(v1);
 
 		System.out.println("Vehicles remaining in garage after collection");
-		myGarage.displayDetails();
+		myGarage.print();
 		System.out.println("Garage Name is " + myGarage.getName());
 
 	}
