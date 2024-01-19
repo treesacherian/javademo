@@ -1,3 +1,5 @@
+
+// This file is no longer correct. Correct main() is in garage1.VehicleApp
 package garage;
 
 public class VehicleApp {

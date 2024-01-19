@@ -32,10 +32,37 @@ public class Garage {
 		vehicles.remove(vehicle);
 	}
 
-	public void print() {
-		for (Vehicle vehicle : vehicles) {
-			vehicle.displayDetails();
-		}
+	@Override
+	public String toString() {
+		return "Garage [name=" + name + "\n" + " vehicles=" + vehicles + "]";
 	}
+
+	public ArrayList<Vehicle> getVehicles() {
+		return vehicles;
+	}
+
+	public void setVehicles(ArrayList<Vehicle> vehicles) {
+		this.vehicles = vehicles;
+	}
+
+	public void fix() {
+		int sum = 0;
+		for (Vehicle vehicle : vehicles) {
+			System.out.println("GARAGE BILL for " + vehicle.getClass() + ": " + vehicle.calcBill());
+			sum += vehicle.calcBill();
+
+		}
+		System.out.println("Total Bill:" + sum);
+	}
+
+	public int count() {
+		return this.vehicles.size();
+	}
+//	public void print() {
+//		for (Vehicle vehicle : vehicles) {
+//			vehicle.displayDetails();
+//		}
+
+//		}
 
 }
